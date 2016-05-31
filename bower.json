@@ -1,0 +1,24 @@
+{
+  "name": "awesomelist",
+  "description": "To do list",
+  "main": "index.js",
+  "authors": [
+    "chris and nick"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "lists",
+    "awesome"
+  ],
+  "homepage": "https://github.com/ChrisKummelstedt/angular_tutorial",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.6"
+  }
+}

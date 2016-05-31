@@ -1,0 +1,29 @@
+{
+  "name": "awesomelist",
+  "version": "1.0.0",
+  "description": "To do list",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChrisKummelstedt/awesomelist.git"
+  },
+  "keywords": [
+    "lists",
+    "awesome"
+  ],
+  "author": "chris and nick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChrisKummelstedt/awesomelist/issues"
+  },
+  "homepage": "https://github.com/ChrisKummelstedt/awesomelist#readme",
+  "dependencies": {
+    "hapi": "^13.4.1"
+  },
+  "devDependencies": {
+    "jasmine-node": "^1.14.5"
+  }
+}
