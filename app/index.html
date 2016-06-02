@@ -1,15 +1,23 @@
 <!doctype html>
 <html lang="en" ng-app="toDoApp">
-  <head>
-    <meta charset="utf-8">
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/controllers/ToDoController.js"></script>
-    <title>Todos App</title>
-  </head>
-  <body>
-    <div id="todo" ng-controller="ToDoController as controller">
-    	{{ controller.todo }}
-    </div>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/controllers/ToDoController.js"></script>
+  <script src="js/controllers/ToDoFactory.js"></script>
+  <title>Todos App</title>
+</head>
+
+
+<body>
+  <div id="todos" ng-controller="ToDoController as controller">
+    <p ng-repeat="todo in controller.todos">
+      {{ todo.text }}: {{ todo.completed ? "Completed" : "Incomplete"}}
+    </p>
+    <input id="addtodo" type="text" ng-model="inputtext">
+    <button id="addtodobutton" ng-click="controller.addToDo(inputtext);">Add</button>
+    <button id="deletebutton" ng-click="controller.deleteToDo();">Delete Last Item</button>
+  </div>
+</body>
 </html>
